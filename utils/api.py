@@ -1,1 +1,0 @@
-bulk_download_url = 'https://www.sec.gov/Archives/edgar/daily-index/bulkdata/submissions.zip'
