@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_migrate import Migrate
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -11,6 +12,9 @@ def create_app(config_class=Config):
     
     # Initialize Flask extensions here
     db.init_app(app)
+    
+    #Initialize Flask-Migrate here
+    migrate = Migrate(app, db)
 
     # Register blueprints here
     from app.main import bp as main_bp
