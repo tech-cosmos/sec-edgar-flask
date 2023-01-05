@@ -5,7 +5,7 @@ class Submission(db.Model):
     
     cik = db.Column(db.String(100), primary_key=True)
     ein = db.Column(db.String(100))
-    phone = db.Column(db.String(12))
+    phone = db.Column(db.String(20))
     description = db.Column(db.String(255))
     name = db.Column(db.String(255))
     entityType = db.Column(db.String(255))
